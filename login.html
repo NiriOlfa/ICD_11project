@@ -1,63 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>ICD_11Webpage </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page principale</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
 
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">ICD_11</h2>
-            </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
+        <h2 class="logo">Hopital Habib <br> Thameur </h2>
 
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>
 
-        </div> 
-        <div class="content">
-            <h1>“Adoption of ICD-11 in the <br><span>in the gastro <br> department of Habib <br>Thameur hospital</span></h1>
-            <p class="par"> “Toward Optimal Digestive Health: Nurturing Excellence in the Hospital Gastroenterology Department,<br> Where Compassion Guides Every Interaction, Medical Expertise Offers Relief,<br> and Commitment to Each Patient's Well-Being Lights Our Path to Optimal <br>Digestive Health healthier future."
-			</p>
 
-                <button class="cn"><a href="#">Join Us</a></button>
 
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email Here">
-                    <input type="password" name="" placeholder="Enter Password Here">
-                    <button class="btnn"><a href="#">Login</a></button>
 
-                    <p class="link">Don't have an account<br>
-                    <a href="signup.html">Sign up </a> here</a></p>
-                    <p class="liw">Log in with</p>
 
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    </div>
+        <nav class="navigation">
+            <a href="#"> Accueil</a>
+            <a href="#"> A Propos </a>
+            <a href="#"> Services</a>
+            <a href="#"> Contact</a>
+            <button class="btnlogin">Connexion</button>
+
+        </nav>
+    </header>
+
+    <p class="paragraph">“Au Service de Votre Santé" <br><span>Vers une santé digestive <br> optimale </span></p>
+
+
+
+
+    <div class="wrapper">
+
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form_box login">
+            <h2>
+                Connexion
+            </h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">
+                        Souviens_moi</label>
+                    <a href="#"> Mot de passe Oublié ?</a>
+                </div>
+                <button type="submit" class="btn">Se Connecter </button>
+                <div class="login_register">
+                    <p> Je n'ai pas un compte
+                        <a href="#" class="register_link">S'inscrire</a>
+                    </p>
 
                 </div>
-                    </div>
-                </div>
+            </form>
+
         </div>
+        <div class="form_box register">
+            <h2>
+                Inscription
+            </h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nom d'utilisateur</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">
+                        J'accepte les conditions générales et la politique de confidentialité</label>
+                    <a href="#"> </a>
+                </div>
+                <button type="submit" class="btn">S'inscrire </button>
+                <div class="login_register">
+                    <p> Vous avez déjà un compte?
+
+                        <a href="#" class="login_link">Se Connecter</a>
+                    </p>
+
+                </div>
+            </form>
+
+        </div>
+
+
+
+
+
+
+
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+    <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
